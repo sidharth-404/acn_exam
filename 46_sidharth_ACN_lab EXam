@@ -1,0 +1,135 @@
+1) mkdir structure cd structure
+exam@debian:~/structure$ mkdir location1
+exam@debian:~/structure$ mkdir location2
+exam@debian:~/structure$ mkdir location3
+exam@debian:~/structure$ cd location1
+exam@debian:~/structure/location1$ touch sales1 sales2 sales3
+cd location2
+exam@debian:~/structure/location2$ cat > pur1
+pur1
+exam@debian:~/structure/location2$ cat > pur2
+pur2
+
+
+cd location3
+exam@debian:~/structure/location3$ cat > stock1
+pen
+pencil
+book
+laptop
+papper
+dhhd
+qsa
+ere
+trrg
+dghgd
+jdhh
+jjhh
+njdhd
+bottel
+chappal
+mouse
+keyboard
+
+cat > stock2
+xyz
+stock 
+stock
+
+
+
+Q1) cat pur1 >> pur2
+exam@debian:~/structure/location2$ cat pur2 >> pur3
+
+Q2) cp -r pur3 ~/structure/location3/stock3
+cat stock3
+pur2
+pur1
+Q3) chmod +rwx stock3
+Q4)head -n 10 stock1
+pen
+pencil
+book
+laptop
+papper
+dhhd
+qsa
+ere
+trrg
+dghgd
+
+
+Q5)
+ls -al
+total 8
+drwxr-xr-x 2 exam exam 4096 Oct  8 14:01 .
+drwxr-xr-x 5 exam exam 4096 Oct  8 14:00 ..
+-rw-r--r-- 1 exam exam    0 Oct  8 14:01 sales1
+-rw-r--r-- 1 exam exam    0 Oct  8 14:01 sales2
+-rw-r--r-- 1 exam exam    0 Oct  8 14:01 sales3
+
+2)  
+
+echo "1.volume of sphere"
+echo "2.volume of cube"
+echo "3.volume of cylinder"
+echo "enter your choice"
+read x
+case $x in
+1)echo "enter the radius sphere"
+   read r
+   z=$((r*r*r*4*22))
+   k=$((z/21))
+   echo volume of sphere $k
+   ;;
+2)echo "enter the length of cube"
+   read q
+   s=$((q*q*q))
+   echo "volume of square" $s;;
+3)echo "enter the radius and height of cylinder"
+    read r
+    read x
+   s=$((22*r*r*x))
+   q=$((s/7))
+   echo "volume of cylinder" $q;;
+*)echo invalid choice;;
+esac
+
+
+
+
+output:
+exam@debian:~$ bash exam.sh
+1.volume of sphere
+2.volume of cube
+3.volume of cylinder
+enter your choice
+1
+enter the radius sphere
+2
+volume of sphere 33
+exam@debian:~$ bash exam.sh
+1.volume of sphere
+2.volume of cube
+3.volume of cylinder
+enter your choice
+2
+enter the length of cube
+3
+volume of square 27
+exam@debian:~$ bash exam.sh
+1.volume of sphere
+2.volume of cube
+3.volume of cylinder
+enter your choice
+3
+enter the radius and height of cylinder
+2
+3
+volume of cylinder 37
+
+
+
+
+
+
